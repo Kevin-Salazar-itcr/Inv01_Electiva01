@@ -1,0 +1,323 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Information Retrieval and Text Mining\\
+}
+
+\author{\IEEEauthorblockN{1\textsuperscript{er} Estudiante}
+\IEEEauthorblockA{
+\textit{2021138547} \\
+\textit{Kevin Salazar Valles} \\
+\textit{Tecnológico de Costa Rica}\\}
+\and
+\IEEEauthorblockN{2\textsuperscript{do} Estudiante}
+\IEEEauthorblockA{
+\textit{2021089068}\\
+\textit{Ariana Alvarado Molina} \\
+\textit{Tecnológico de Costa Rica}\\}
+\and
+\IEEEauthorblockN{3\textsuperscript{er} Estudiante}
+\IEEEauthorblockA{
+\textit{2019081563}\\
+\textit{Adrián Herrera Segura} \\
+\textit{Tecnológico de Costa Rica}\\}
+\and
+\IEEEauthorblockN{4\textsuperscript{to} Estudiante}
+\IEEEauthorblockA{
+\textit{2020103578}\\
+\textit{David Centeno Araya} \\
+\textit{Tecnológico de Costa Rica}\\}
+}
+\maketitle
+
+\begin{abstract}
+Este documento fue generado como proyecto de investigación para el curso de Recuperación de Información textual, desarrollando el tema de minería de textos y recuperación textual.
+\end{abstract}
+
+\section{Introducción}
+
+En el presente documento, se detallará toda la información acerca del tema 'Information Retrieval and Text Mining', que lo que busca en pocas palabras es explicar cómo a través del uso de ciencias aplicadas al manejo de datos y la inteligencia artificial, se puede agilizar el trabajo que es arduo, pesado o tedioso para un ser humano, y a la vez beneficiar a empresas y personas.
+Hoy en día, el mundo en el cual habitamos es una sociedad globalizada, gracias a los avances importantes en tecnologías de la información y comunicación (TIC's). Mucho de lo que nos rodea en este amplio y vasto mundo globalizado es texto, y se ve en diferentes partes, ya sea en simples periódicos, noticias del día a día, hasta en redes sociales (háblese de Facebook, Instagram, Twitter...) y hasta en cadenas empresariales e incluso los documentos con los que se trabaja en diversos ámbitos, todo es texto.\\
+Si bien esto se puede interpretar como una carga masiva para el ser humano, la ciencia y la tecnología se ha sabido adaptar para la generación de sistemas complejos los cuales permiten la agilización de estas tareas que suelen ser tediosas o pesadas para el humano promedio. Aquí entra el tema de la minería de texto, tema el cual será abordado de manera profunda a lo largo de este documento, al igual que se explica la forma en la cual trabaja esta disciplina derivada de la ciencia de datos, así como se mostrará algunos de los vastos algoritmos empleados en esta área de la ciencia.
+
+
+\section{Definición}
+En las diversas áreas comprendidas por la ciencia de datos y ciencias de la computación, los avances que se han presentado en las ultimas décadas abarcan múltiples aplicaciones en el mundo real, como un modelo de ejemplo se encuentran las empresas, estas manejan grandes cantidades de datos a diario, los cuales son de vital importancia, dado que con estos se obtiene un criterio del panorama y la visión de las opiniones acerca de un producto o servicio ofrecido. Para un ser humano, comprender inmensas cantidades de texto, datos que proceden de diversas (y si, muchas) fuentes es algo prácticamente imposible, esto debido a que nadie puede procesar tan rápido una multitud inmensa de datos y así obtener una conclusión de estos, la cual es útil para la empresa. \\
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.8\linewidth]{falta-organizacion-oficinas-antiguas.jpg}
+    \caption{Manejo de papeleo en oficinas antiguas}
+    \label{fig:ms1}
+\end{figure}
+\\
+Aquí es donde entra el campo de la ingeniería y la ciencia, con lo que conocemos como inteligencia artificial. La inteligencia artificial juega un papel relevante desde su aparición; como se tiene por sabido, esta disciplina posee miles de aplicaciones en el mundo real, en este caso, en la comprensión de grandes cantidades de datos. Dicha rama, en conjunto con lo que se conoce como procesamiento de lenguaje natural, abre paso a otra rama de la ciencia de datos llamada la minería de textos.
+De manera introductoria, la minería de texto es una técnica de análisis y recopilación de datos, la cual tiene como objetivo el reconocimiento de información relevante o valiosa, a partir del procesado automático de grandes cantidades de textos no estructurados (texto generado por un ser humano con formato textual o no textual). Esta disciplina se orienta también al campo del machine learning, campo cuya importancia es vital para el entrenamiento de las inteligencias artificiales. La minería de textos se basa en la búsqueda de patrones en diferentes textos en diferentes cantidades, esto se logra a base del análisis a fondo del texto, esto se logra con algoritmos los cuales le permiten a la máquina aprender a desarrollar la tarea que lleva a cabo, haciendo el uso de ejemplos; a lo anterior, Delgado [1] argumenta lo siguiente: “Los modelos de aprendizaje automático necesitan ser entrenados con datos, tras lo cual son capaces de predecir con un cierto nivel de precisión de forma automática.”
+La mayoría de la información que nos rodea es texto, toda la información que se maneja día a día es texto. Las empresas trabajan todo el tiempo con dicho recurso, esto abarca comentarios del público, reseñas, correos, distribución de publicidad, documentos de relevancia, entre otros… y el procesamiento en bruto de tal cantidad de información es abrumadora, para esto se especializan las inteligencias artificiales y es donde entra en juego el manejo de textos y minería de datos. En simples palabras, la principal función de la minería de texto es generar resúmenes de grandes cantidades de información suministrada. 
+La minería de texto se basa en diferentes etapas las cuales van desde la simple recolección de datos, pasando por el proceso de estos datos, la limpieza de texto, tokenización (dividir el texto en partes significativas), hasta la extracción de las características más importantes. 
+
+\section{Casos de Uso}
+Information Retieval casos:
+\subsection{Motores de Búsqueda}
+Motores de búsqueda: muchos de los navegadores utilizados actualmente utilizan las técnicas de IR para realizar búsquedas en diferentes documentos, esto por medio de la indexación, procesamiento de la consulta y la recuperación de la información.  
+\begin{itemize}
+    \item La indexación es uno de los elementos utilizados en la búsqueda dado a la utilización de "spiders" para realizar recorridos por la web y recopilar la información que está siendo solicitada por el usuario, sean los contenidos de los documentos, adicionalmente, datos sobre las bases estructurales de los diferentes sitios web, enlaces, texto presente en el sitio, imágenes, entre otros.  Recopilada la información se procede al almacenamiento en un índice (bases de datos tiene información de cada página web y sus diferentes contenidos). Por lo tanto, cuando se realiza una búsqueda el motor accede a este índice para devolver las páginas que estén relacionadas con la información que se está buscando. 
+    \item     La obtención de información se daría con base en las consultas que haya realizado el usuario y en la relevancia que tengan en los motores de búsqueda, también basándose en las búsquedas mas realizadas que tengan los índices que tengan algún grado de similitud con lo que esta buscando el usuario. 
+    \item     En cuanto al procesamiento de las consultas se toman en cuenta los términos o elementos de búsqueda con más relevancia. Para este tipo de procesamiento existe una serie de etapas: la tokenizacion , la eliminación de palabras vacías, la normalización y expansión de la consulta. Una vez se pasó por cada una de estas etapas se buscan documentos relevantes en el índice que poseen los motores de búsqueda. 
+\end{itemize}
+
+
+\subsection{Elasticsearh}
+Uno de los casos de uso más frecuentes del IR es el elasticsearh, es una herramienta que utiliza un índice invertido para hacer un sistema de búsqueda. Esta herramienta fue desarrollada sobre Apache Lucene y está enfocada en realizar tareas de recuperación. 
+
+\subsection{Sistemas de recomendación}
+Recomendaciones por parte de los sistemas de búsqueda con base en las preferencias que tenga el usuario o en ciertos comportamientos que tienen en la navegación se puedan marcar como patrones de búsqueda por parte del usuario y se logra dar recomendaciones con base en el análisis de esos datos. 
+
+Minería de texto - casos:
+\subsection{Extracción de información}
+Uno de los casos de uso de la minería de texto es en la extracción de información específica de un documento en particular. Esta técnica de minería se puede ver reflejada en el modelo Latent Dirichlet Allocation, el cual es un modelo extrae los tópicos de una colección de documentos. 
+\subsection{Clasificación}
+Otro de los casos de uso de la minería de texto en las clasificaciones de documentos o de textos, esto se puede ver reflejado en los correos electrónicos de una empresa financiera donde los servicios que brinde se dividen en categorías como servicio al cliente, pagos, cobros, prestamos, entre otras divisiones que se pueden tener, y estos requieren de una clasificación adecuada para cada una de las categorías que tiene la empresa. 
+
+\subsection{Textos biomédicos}
+En el área de la medicina se encuentra la minería de textos biomédicos esta herramienta permite un acceso más eficiente por parte de las personas involucradas en esta área a documentos o información de volúmenes masivos de datos. Esté acceso eficiente a datos ayuda al descubrimiento de nuevas relaciones entre genes y enfermedades, efectos secundarios en ciertos pacientes, anomalías genéticas y la identificación de bio-marcadores. 
+
+\section{Principales Algoritmos}
+
+\subsection{Técnicas de Análisis}
+La técnica de la “frecuencia de palabras” consiste en identificar los términos o conceptos más recurrentes en un conjunto de datos. Esto puede resultar muy útil, en particular para analizar las opiniones de clientes o las conversaciones en las redes sociales [16]. 
+
+\setlength{\leftskip}{1cm}
+\setlength{\parindent}{0pt}
+
+\textbf{1. Método de colocación:}
+Consiste en localizar las secuencias de palabras que aparecen con frecuencia las unas cerca de las otras. Al identificar esas colocaciones, es posible comprender mejor la estructura semántica de un texto y obtener resultados más fiables provenientes de la minería de texto [16].
+
+\setlength{\leftskip}{1cm}
+\setlength{\parindent}{0pt}
+
+\textbf{2. Método de concordancia:}
+Se suele utilizar para reconocer el contexto en el que aparece un conjunto de palabras en un texto [16].
+
+\setlength{\leftskip}{1cm}
+\setlength{\parindent}{0pt}
+
+\subsection{Recuperación de información:}
+Consiste en encontrar información pertinente a partir de un conjunto predefinido de consultas o frases. A menudo se emplea este enfoque en los sistemas de catálogos de bibliotecas o los motores de búsqueda web [16].
+
+\setlength{\leftskip}{1cm}
+\setlength{\parindent}{0pt}
+
+\textbf{1. Sistemas “IR” (Information Retrieval):}
+Esta técnica utiliza diferentes algoritmos para seguir los comportamientos de los usuarios e identificar los datos pertinentes. La “tokenización” consiste en descomponer un texto largo en frases o palabras llamadas “tokens”. Esos tokens se usan después en los modelos para el clustering de texto o las tareas que buscan asociar documentos [16].
+
+\setlength{\leftskip}{1cm}
+\setlength{\parindent}{0pt}
+
+\textbf{2. Stemming:}
+Consiste en separar los prefijos y los sufijos de las palabras para derivar su raíz y su significado. Esta técnica permite reducir el tamaño de los archivos de indexación [16].
+
+\setlength{\leftskip}{1cm}
+\setlength{\parindent}{0pt}
+
+\subsection{Clasificación de texto:}
+La clasificación de textos consiste en asignar etiquetas a los datos de texto no estructurados. Es una fase esencial e indispensable para el tratamiento natural del lenguaje. \linebreak \\
+Permite organizar y estructurar un texto complejo para despejar los datos pertinentes. Gracias a esta técnica, las empresas están capacitadas para analizar todo tipo de información textual para sacar valiosas orientaciones [16]. 
+
+\setlength{\leftskip}{1cm}
+\setlength{\parindent}{0pt}
+
+\textbf{1. Análisis de temas:}
+Permite comprender los temas principales de un texto. Es una de las razones principales para organizar los datos textuales [16].
+
+\setlength{\leftskip}{1cm}
+\setlength{\parindent}{0pt}
+
+\textbf{2. Análisis de sentimientos:}
+Consiste en analizar las emociones contenidas en un texto. Los textos pueden clasificarse según si son positivos, negativos o neutros [16].
+
+\setlength{\leftskip}{1cm}
+\setlength{\parindent}{0pt}
+
+\textbf{3. Detección del lenguaje:}
+Consiste en clasificar un texto en función del lenguaje. Por ejemplo, será posible clasificar las consultas a un servicio de atención al cliente para redirigirlas hacia un asesor o un agente que domine el lenguaje adecuado. Esto permite ganar un tiempo muy valioso [16]. 
+
+\setlength{\leftskip}{1cm}
+\setlength{\parindent}{0pt}
+
+\textbf{4. Detección de intenciones:}
+Permite reconocer de manera automática las intenciones de un texto. Por ejemplo, el análisis de diferentes respuestas a un correo electrónico publicitario permite determinar qué interlocutores están interesados en un producto [16].
+
+\setlength{\leftskip}{1cm}
+\setlength{\parindent}{0pt}
+
+\subsection{Clasificación de texto:}
+Tiene el objetivo de extraer datos específicos en un texto, como palabras clave, nombres propios, direcciones o correos electrónicos. Esto permite evitar tener que clasificar los datos manualmente. \linebreak \\
+Es posible combinar la extracción de textos y la clasificación textual u otros métodos de minería de texto en el mismo análisis [16].
+
+\section{Principales Autores/Bibliografía}
+
+
+\setlength{\leftskip}{0cm}
+ \setlength{\parindent}{1em}
+Hoy por hoy las grandes empresas modernas requieren de muchos datos para el sector en que se desarrollan o bien sobre sus consumidores. Tecnologías como las diferentes redes sociales (Facebook, Instagram, Twitter, WhatsApp, etc) son de gran importancia en este comercio, ya que, constituyen a una gran cantidad de información que permite examinar el volumen de estos datos de información de manera casi inmediata, y por consecuente provocar una mejor ganancia en la productividad del comercio. 
+
+Sin embargo, la recuperación de la información y la minería de texto es un proceso que ha venido evolucionando con el transcurrir de los años. Si nos devolvemos alrededor a los años sesenta en donde algunas empresas empezaron a desarrollar lo que hoy en día se denomina como data fishing, que según investigaciones realizadas por [2], estos datos consisten en: 
+
+\setlength{\leftskip}{1cm}
+\setlength{\parindent}{0pt}
+"Es una práctica de minería de datos en la que se analizan grandes volúmenes de datos para encontrar posibles relaciones entre los datos. Los científicos de datos pueden formular hipótesis sobre por qué existen estas relaciones. Por el contrario, los métodos tradicionales de análisis de datos científicos comienzan con una hipótesis, seguida de un examen de datos para probar o refutar la hipótesis."
+
+\setlength{\leftskip}{0cm}
+ \setlength{\parindent}{1em}
+Continuando con la idea anterior, el data fishing de esos tiempos al ser un método prácticamente casi nuevo, no era muy entendible ni comprensible como lo es hoy en día, por lo tanto, era muy difícil entender el alcance que este podía llegar a tener y la utilidad que se podría aprovechar con la información adquirida. Seguidamente para principios de los años ochenta ya se podrían ver los primeros esfuerzos de la minería de texto que requería del esfuerzo humano para poder ser desarrollada. En el trabajo realizado por [3], se puede verificar lo anteriormente mencionado: 
+
+\setlength{\leftskip}{1cm}
+\setlength{\parindent}{0pt}
+"Ya en los años 80 se observaron los primeros esfuerzos de lo que hoy conocemos como minería de textos, aunque en ese momento se necesitaba de un gran esfuerzo humano ya que los avances tecnológicos todavía no se habían aplicado en este campo. Con el paso de los años, hemos visto como esta técnica ha avanzado hasta el punto en el que existe poca presencia humana dentro de este proceso." 
+
+\setlength{\leftskip}{0cm}
+ \setlength{\parindent}{1em}
+Por consiguiente, la minería de texto es de gran ventaja para muchas personas y empresas, ya que, gracias a ellas se reducen los costos y por ende aumenta la productividad, ahorrando tiempo entre sí. Si bien es cierto que la recuperación de información textual transciende desde tiempo atrás, no obstante la historia no acaba aquí, pues como lo menciona (Minería de textos, 2010): 
+
+
+\setlength{\leftskip}{1cm}
+\setlength{\parindent}{0pt}
+"Fue en 1977 cuando “el sistema THOMAS, ilustró cómo las palabras o las frases clave podían utilizarse para guiar a los usuarios en el descubrimiento de documentos de referencia útiles. Las frases clave son un tipo especialmente útil de información abreviada. Sin embargo, tales frases se eligen con frecuencia manualmente, bien por los autores o por indizadores profesionales. Condensan documentos en unas pocas palabras y frases, ofreciendo una descripción breve y precisa de los contenidos de un documento”[3].
+
+\setlength{\leftskip}{0cm}
+ \setlength{\parindent}{1em}
+ De igual manera, es importante mencionar nuevamente que a principios de los años 1980, como se mencionó anteriormente, se realizaron los primeros esfuerzos de lo que hoy se conoce como "minería de texto", no obstante, según [4], fue gracias a los aportes de Rakesh Agrawal, GioWiederhold, Robert Blum y Gregory Piatetsky-Shapiro, entre otros, que se empezaron a consolidar términos como minería de datos, que si bien es cierto tiene un concepto un tanto diferente a la minería de texto pues, según lo citado en [5] la minería de texto "es el estudio y práctica de extraer información de textos haciendo uso de los principios de la lingüística computacional"[7], a diferencia de la minería de datos que según lo citado en [5] la define como "un proceso pro activo que busca automáticamente en los datos nuevas relaciones y anomalías en las que basar las decisiones comerciales para obtener una ventaja competitiva."[6]; sin embargo, estos aportes fueron el inicio de una gran era en la minería de texto y datos como lo es hoy en día. 
+
+Asimismo, es importante tomar en cuenta que con el pasar del tiempo y con el avance que ha tenido la tecnología en los últimos años, se han estado implementando nuevas mejoras en cuanto a la recuperación de la información y la minería de texto que resultan más rápido, eficaz y económico a la hora de analizar grandes cantidades de texto en un tiempo muy reducido, no obstante, al ser un tema bastante complejo puede que en ocasiones se requiera de profesionales en el tema capacitados para poder resolver cualquier problema con el que se deban enfrentar. 
+
+
+Ahora bien, es fundamental mencionar algunos libros o artículos que han sido de gran importancia en esta rama, ya que, gracias a ellos podemos mantenernos en un constante aprendizaje de la evolución de la minería de texto. A continuación presentaremos algunos libros de gran importancia en el ámbito educativo: 
+
+\textbf{1. MINERÍA DE TEXTO CON R. Aplicaciones y técnicas estadísticas de apoyo:}  en este libro se puede encontrar información como el procesamiento de datos, técnicas descriptivas en la minería de texto, técnicas explicativas y aplicaciones de la minería de texto. Adjuntamos la siguiente figura con fines meramente ilustrativos, ver figura \ref{fig:ms1}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Libro1.jpg}
+    \caption{Minería de texto con R}
+    \label{fig:ms2}
+\end{figure}
+
+\textbf{2. Data Mining and Text Mining for Science and Technology Research:} en este documento se encontrará información acerca de la minería de datos y la minería de texto. Se introduce el tema de minería de texto como un caso especial de la minería de datos, además explica la utilidad que tienen para la bibliometría (datos matemáticos, estadísticos) y base de datos de patentes. Adjuntamos las siguientes figuras con fines meramente ilustrativos, ver figura \ref{fig:ms2} y \ref{fig:ms3}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.8\linewidth]{fig2.jpg}
+    \caption{Data Mining and Text Mining}
+    \label{fig:ms3}
+\end{figure}
+
+\
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.8\linewidth]{fig3.jpg}
+    \caption{Data Mining and Text Mining}
+    \label{fig:ms4}
+\end{figure}
+
+\textbf{3. Modern Information Retrieval: } en este libro se puede encontrar información acerca del tema de la recuperación de información desde una perspectiva de ciencias de la computación. Va dirigido especialmente a estudiantes que deseen conocer sobre esta rama, incluye temas como como la recuperación web, el rastreo web, los motores de búsqueda de código abierto entre otros. También presentan conceptos importantes y los ejemplifican. Además este libro consta de dos autores principales, con contribuciones de principales autoridades en esta área, como lo es Yoelle Maarek, directora sénior de Yahoo! Investigación Israel; Dulce Poncele´on IBM Research; y Malcolm Slaney, Yahoo Research USA, como bien lo menciona el libro. Adjuntamos las siguientes figuras con fines meramente ilustrativos, ver figura \ref{fig:ms4} y \ref{fig:ms5} 
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.8\linewidth]{ModernInformation2.jpg}
+    \caption{Modern Information Retrieval, Primera Edición}
+    \label{fig:ms5}
+\end{figure}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.8\linewidth]{ModernInformation1.jpg}
+    \caption{Modern Information Retrieval, Segunda Edición}
+    \label{fig:ms6}
+\end{figure}
+
+
+\textbf{4. Text Mining: Applications and Theory: } en este libro se encuentra información de algoritmos avanzados desde perspectivas académicas e industriales. Además de los algoritmos que proporciona se encuentra información de técnicas de ultima generación de la minería de texto, como son la clasificación, agrupación y detección de anomalías como bien se menciona en el libro. Por consiguiente, este libro es de gran utilidad para todas aquellas personas que estén interesadas en esta área, como estudiantes que cursan carreras universitarias relacionadas a la informática, matemáticos, estadísticos u cualquier otra persona/profesional en esta rama. Adjuntamos la siguiente figura con fines meramente ilustrativos, ver figura \ref{fig:ms6}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.8\linewidth]{TextMining4.jpg}
+    \caption{Text Mining: Applications and Theory}
+    \label{fig:ms7}
+\end{figure}
+
+
+\section{Datos importantes }
+
+Bien sabemos que la minería de texto es la que se encarga o bien la que se basa en la búsqueda de grandes cantidades de texto, que requieren de varias etapas o fases que son necesarias para la correcta ejecución u manipulación de los textos, es por esto que a continuación se detallan de forma cronológica las fases de la minería de texto: 
+
+\textbf{1. Recolección de datos: }esta fase es sino la más importante de todas, ya que, en ella se recopilan todos los textos necesarios que se van a analizar. Es de primordial importancia que se realice de forma automatizada, sin embargo debe estar bajo supervisión de un científico de datos.  Así lo explica Arévalo [8] “recopilación de datos de diferentes recursos, tales como sitio web, correos electrónicos, comentarios de clientes, archivo de documentos. Dependiendo de la aplicación, este proceso puede ser completamente automatizado o guiado por una persona encargada de realizar este proceso.”
+
+
+\textbf{2. Procesamiento de datos: }en esta fase se debe separar u bien seleccionar los datos de mayor valor, esto con el fin de lograr separar la información en aquella que puede ser de mayor importancia con respecto a la que no tiene ninguna función o valor.  Así lo menciona Arévalo [8], “La identificación del contenido y la extracción de características representativas”
+
+
+\textbf{3. Limpieza:} esta fase básicamente consiste en hacer una limpieza, eliminando cualquier tipo de información que pueda llegar a alterar el pre-procesamiento de los datos. En ella se tendrán que eliminar toda redundancia o duplicaciones de los textos. Así lo explica Arévalo [8], “eliminación de cualquier información innecesaria o no deseada, como los anuncios de las páginas.”
+
+
+\textbf{4. Tokenización: } en esta fase se traduce toda la información de los textos elegidos previamente en lenguajes de programación, esto con el fin de que las computadoras puedan reconocerlo. Así lo menciona Arévalo [8], “un ordenador sólo ve una cadena de caracteres, sin poder identificar, por ejemplo, párrafos, frases o palabras. La Tokenización divide el texto en entidades significativas (palabras, oraciones, etc.) dados los espacios en blanco presentes y las puntuaciones.”
+
+\textbf{5. Descubrimiento: } busca los patrones establecidos. 
+
+\textbf{6. Visualización: }finalmente, la muestra de datos en esta fase es primordial. 
+
+\ 
+
+Ahora bien la minería de textos puede traer consigo una serie de beneficios que se enumeran a continuación:
+
+
+\begin{thebibliography}{00}
+
+\bibitem{b1} A. Delgado (2022, Marzo 01). Text Mining: Introducción al análisis de textos con IA. (1ra edición) [Online]. Available: https://pixelabs.es/que-es-la-mineria-de-textos/
+
+\bibitem{b2} R. Awati (2022, Abril 14). Data Dredging (data fishing) (1ra edición) [Online]. Available: https://www.techtarget.com/searchdatamanagement/definition/data-dredging
+
+\bibitem{b3} M. Álvaro López (2019, Junio). APLICACIONES DEL TEXT MINING EN LA ACTUALIDAD CENTRADO EN EL ÁREA DE MARKETING (1ra edición) [Online]. Available: https://repositorio.comillas.edu/jspui/bitstream/11531/32596/1/Aplicaciones%20del%20Text%20Mining%20en%20la%20Actualidad%20centrado%20en%20el%20Area%20del%20Marketing.pdf
+
+\bibitem{b4} Y. Rodríguez Suárez and A. Díaz Amador (2009). Herramientas de Minería de Datos (1ra edición) [Online]. Available: https://www.redalyc.org/pdf/3783/378343637009.pdf
+
+\bibitem{b5} Kroeze, Jan and Matthee, Machdel and Bothma, Theo (2004, 01). Differentiating between data-mining and text-mining terminology (1era edición) [Online]. Available: 10.4102/sajim.v6i4.353
+
+\bibitem{b6} Rob, P. and Coronel, C.  (2002). Database systems: design, implementation, and management  (5ta edición) [Online]. Available: https://sajim.co.za/index.php/sajim/article/view/353/344
+
+\bibitem{b7} D. Sullivan(2000). The need for text mining in business intelligence (1era edición) [Online]. Available: http://www.dmreview.com/master.cfm
+
+\bibitem{b8} J. Arévalo (2018, Febrero, 22). ¿Qué es la minería de textos, cómo funciona y por qué es útil? [Online]. Available: https://universoabierto.org/2018/02/22/que-es-la-mineria-de-textos-como-funciona-y-por-que-es-util/
+
+%10
+\bibitem{b9} A. Karami, M. Lundy, F. Webb, and Y. K. Dwivedi. (2020, Marzo 26).Twitter and Research: A Systematic Literature Review Through Text (2da edición) [Online]. Available: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9047963 
+
+\bibitem{b10} A. Godoy. (2017, Abril 1).Técnicas de aprendizaje de máquina utilizadas para la minería de texto. (1ra edición) [Online]. Available: https://www.scielo.org.mx/pdf/ib/v31n71/2448-8321-ib-31-71-00103.pdf  
+
+\bibitem{b11} J. Chang, C. O’ Reilly, N. Pontika, G. Owen, K. Haug and M. Oudenhoven. (2018, Febrero 21). ¿Qué es la minería de textos, cómo funciona y por qué es útil?  (1ra edición) [Online]. Available: https://universoabierto.org/2018/02/22/que-es-la-mineria-de-textos-como-funciona-y-por-que-es-util/ 
+
+\bibitem{b12} J. Harney, J. Dwyer. (2019, Agosto 1). Domain-Specific Language Processing Mines Value From Unstructured Data. (1ra edición) [Online]. Available: https://www.kdnuggets.com/2019/08/domain-specific-language-processing.html 
+
+\bibitem{b13} L. Lanzarini, W. Hasperué, A. Villa Monte, P. Jimbo, G. Reyes, J. Corvi, A. Fernandez and J. A. Olivas. (2019, Abril 1).Minería de Datos, Minería de Textos y Big Data. (1ra edición) [Online]. Available: http://sedici.unlp.edu.ar/handle/10915/77022
+
+\bibitem{b14}T. A. Team, “Examples of Information Retrieval Application on Image and Text – Towards AI,” towardsai.net. https://towardsai.net/p/l/examples-of-information-retrieval-application-on-image-and-text (accessed Feb. 25, 2023).
+
+\bibitem{b15}[1]M. Allahyari et al., “A Brief Survey of Text Mining: Classification, Clustering and Extraction Techniques,” KDD Bigdas, vol. 13, 2017, Available: https://arxiv.org/pdf/1707.02919.pdf
+
+\bibitem{b16}[1]Rédac, T. (2022, 14 septiembre). Text Mining o minería de textos: definición, técnicas, casos de uso. Formation Data Science. https://datascientest.com/es/text-mining-o-mineria-de-textos-definicion-tecnicas-casos-de-uso 
+‌
+
+\end{thebibliography}
+\vspace{14pt}
+
+\end{document}
