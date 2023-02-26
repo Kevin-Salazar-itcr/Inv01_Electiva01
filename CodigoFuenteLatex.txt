@@ -7,11 +7,23 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+\urlstyle{same}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
 \title{Information Retrieval and Text Mining\\
+{\footnotesize \textsuperscript{*}Nota: El repositorio de la fuente del documento se encuentra en \url{https://github.com/Kevin-Salazar-itcr/Inv01_Electiva01}}
 }
 
 \author{\IEEEauthorblockN{1\textsuperscript{er} Estudiante}
@@ -38,6 +50,7 @@
 \textit{David Centeno Araya} \\
 \textit{Tecnológico de Costa Rica}\\}
 }
+
 \maketitle
 
 \begin{abstract}
@@ -235,14 +248,14 @@ Ahora bien, es fundamental mencionar algunos libros o artículos que han sido de
 \begin{figure}[htp]
     \centering
     \includegraphics[width=0.8\linewidth]{ModernInformation2.jpg}
-    \caption{Modern Information Retrieval, Primera Edición}
+    \caption{Modern Information Retrieval, Prime\textsuperscript{ra} edi}
     \label{fig:ms5}
 \end{figure}
 
 \begin{figure}[htp]
     \centering
     \includegraphics[width=0.8\linewidth]{ModernInformation1.jpg}
-    \caption{Modern Information Retrieval, Segunda Edición}
+    \caption{Modern Information Retrieval, Segun\textsuperscript{ra} edi}
     \label{fig:ms6}
 \end{figure}
 
@@ -279,45 +292,56 @@ Bien sabemos que la minería de texto es la que se encarga o bien la que se basa
 \ 
 
 Ahora bien la minería de textos puede traer consigo una serie de beneficios que se enumeran a continuación:
+\\
+\textbf{a. Mejora decisiones: } La minería de texto permite transformar textos no estructurados en información relevante para la toma de decisiones estratégicas en el ámbito laboral, empresarial, e incluso a nivel político.
+\\
+\textbf{b. Descubrimiento de oportunidades: } La ciencia de la computación no se limita a quedarse con lo que ya se tiene, sino que se orienta a alcanzar nuevos horizontes. La detección de patrones ocultos en textos abre la puerta a nuevas vías de negocio a través de la disciplina del Text Mining.
+\\
+\textbf{c. Ahorro de recursos: } La mano de obra humana es algo casi obsoleto en cuanto a la búsqueda de patrones e información exacta para poder determinar un cierto criterio a través de toneladas de información, en pocas palabras, es caro.
+A nivel empresarial suena más rentable y más eficiente el uso de inteligencia artificial para realizar esta tarea, tomando en cuenta los costos de producción y el tiempo ahorrado si se le adjudica este tipo de tareas a una máquina en comparación al tiempo que le toma a una persona hacer el mismo trabajo.
+\\
+\textbf{d. Legibilidad: } La minería de texto arroja resultados precisos, esto quiere decir que no se requiere de fórmulas complejas ni ningún otro método para poder entender los resultados obtenidos a través del proceso de extracción de datos.
+\\
+\textbf{e. Adaptabilidad: } La inteligencia artificial no es algo que solo se cierra a la ciencia, sino que es adaptable en cualquier campo, desde un trabajo simple hasta el manejo de tareas sumamente complejas que a un humano promedio le tomaría mucho tiempo. En este preciso caso, la recuperación textual y la minería de textos se aplica en muchas áreas, por ejemplo, la obtención del estado de una empresa sin necesidad de recurrir al análisis de su balance de cifras, se aplica en el marketing, a la hora de manejar reseñas y análisis de sentimientos acerca de un servicio o producto, como un instrumento en redes sociales para entender el comportamiento de los usuarios y adaptar con ello las estrategias de comunicación, entre otras áreas.
 
 
 \begin{thebibliography}{00}
 
-\bibitem{b1} A. Delgado (2022, Marzo 01). Text Mining: Introducción al análisis de textos con IA. (1ra edición) [Online]. Available: https://pixelabs.es/que-es-la-mineria-de-textos/
+\bibitem{b1} A. Delgado (2022, Marzo 01). Text Mining: Introducción al análisis de textos con IA. (1\textsuperscript{ra} edición [Online]. Available: \url{https://pixelabs.es/que-es-la-mineria-de-textos/}
 
-\bibitem{b2} R. Awati (2022, Abril 14). Data Dredging (data fishing) (1ra edición) [Online]. Available: https://www.techtarget.com/searchdatamanagement/definition/data-dredging
+\bibitem{b2} R. Awati (2022, Abril 14). Data Dredging (data fishing) (1\textsuperscript{ra} edición [Online]. Available: \url{https://www.techtarget.com/searchdatamanagement/definition/data-dredging}
 
-\bibitem{b3} M. Álvaro López (2019, Junio). APLICACIONES DEL TEXT MINING EN LA ACTUALIDAD CENTRADO EN EL ÁREA DE MARKETING (1ra edición) [Online]. Available: https://repositorio.comillas.edu/jspui/bitstream/11531/32596/1/Aplicaciones%20del%20Text%20Mining%20en%20la%20Actualidad%20centrado%20en%20el%20Area%20del%20Marketing.pdf
+\bibitem{b3} M. Álvaro López (2019, Junio). APLICACIONES DEL TEXT MINING EN LA ACTUALIDAD CENTRADO EN EL ÁREA DE MARKETING (1\textsuperscript{ra} edición [Online]. Available: \url{https://repositorio.comillas.edu/jspui/bitstream/11531/32596/1/Aplicaciones%20del%20Text%20Mining%20en%20la%20Actualidad%20centrado%20en%20el%20Area%20del%20Marketing.pdf}
 
-\bibitem{b4} Y. Rodríguez Suárez and A. Díaz Amador (2009). Herramientas de Minería de Datos (1ra edición) [Online]. Available: https://www.redalyc.org/pdf/3783/378343637009.pdf
+\bibitem{b4} Y. Rodríguez Suárez and A. Díaz Amador (2009, Diciembre). Herramientas de Minería de Datos (3\textsuperscript{ra} edición [Online]. Available: \url{https://www.redalyc.org/pdf/3783/378343637009.pdf}
 
-\bibitem{b5} Kroeze, Jan and Matthee, Machdel and Bothma, Theo (2004, 01). Differentiating between data-mining and text-mining terminology (1era edición) [Online]. Available: 10.4102/sajim.v6i4.353
+\bibitem{b5} J.H. Kroeze, M.C. Matthee and T.J.D. Bothma (2004, Diciembre). Differentiating between data-mining and text-mining terminology (4\textsuperscript{ra} edición) [Online]. Available: \url{https://sajim.co.za/index.php/sajim/article/view/353/344}
 
-\bibitem{b6} Rob, P. and Coronel, C.  (2002). Database systems: design, implementation, and management  (5ta edición) [Online]. Available: https://sajim.co.za/index.php/sajim/article/view/353/344
+\bibitem{b6} Rob, P. and Coronel, C.  (2002). Database systems: design, implementation, and management  (5\textsuperscript{ra} edición) [Online]. Available: \url{https://sajim.co.za/index.php/sajim/article/view/353/344}
 
-\bibitem{b7} D. Sullivan(2000). The need for text mining in business intelligence (1era edición) [Online]. Available: http://www.dmreview.com/master.cfm
+\bibitem{b7} D. Sullivan(2004, Enero). The need for text mining in business intelligence (1e\textsuperscript{ra} edición [Online]. Available: \url{https://www.researchgate.net/publication/344067699_Text_Mining_in_Business_Intelligence}
 
-\bibitem{b8} J. Arévalo (2018, Febrero, 22). ¿Qué es la minería de textos, cómo funciona y por qué es útil? [Online]. Available: https://universoabierto.org/2018/02/22/que-es-la-mineria-de-textos-como-funciona-y-por-que-es-util/
+\bibitem{b8} J. Arévalo (2018, Febrero, 22). ¿Qué es la minería de textos, cómo funciona y por qué es útil? [Online]. Available: \url{https://universoabierto.org/2018/02/22/que-es-la-mineria-de-textos-como-funciona-y-por-que-es-util/}
 
-%10
-\bibitem{b9} A. Karami, M. Lundy, F. Webb, and Y. K. Dwivedi. (2020, Marzo 26).Twitter and Research: A Systematic Literature Review Through Text (2da edición) [Online]. Available: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9047963 
+\bibitem{b9} A. Karami, M. Lundy, F. Webb, and Y. K. Dwivedi. (2020, Marzo 26).Twitter and Research: A Systematic Literature Review Through Text (2\textsuperscript{ra} edición [Online]. Available: \url{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9047963} 
 
-\bibitem{b10} A. Godoy. (2017, Abril 1).Técnicas de aprendizaje de máquina utilizadas para la minería de texto. (1ra edición) [Online]. Available: https://www.scielo.org.mx/pdf/ib/v31n71/2448-8321-ib-31-71-00103.pdf  
+\bibitem{b10} A. Godoy. (2017, Abril 1).Técnicas de aprendizaje de máquina utilizadas para la minería de texto. (1\textsuperscript{ra} edición [Online]. Available: \url{https://www.scielo.org.mx/pdf/ib/v31n71/2448-8321-ib-31-71-00103.pdf}  
 
-\bibitem{b11} J. Chang, C. O’ Reilly, N. Pontika, G. Owen, K. Haug and M. Oudenhoven. (2018, Febrero 21). ¿Qué es la minería de textos, cómo funciona y por qué es útil?  (1ra edición) [Online]. Available: https://universoabierto.org/2018/02/22/que-es-la-mineria-de-textos-como-funciona-y-por-que-es-util/ 
+\bibitem{b11} J. Chang, C. O’ Reilly, N. Pontika, G. Owen, K. Haug and M. Oudenhoven. (2018, Febrero 21). ¿Qué es la minería de textos, cómo funciona y por qué es útil?  (1\textsuperscript{ra} edición [Online]. Available: \url{https://universoabierto.org/2018/02/22/que-es-la-mineria-de-textos-como-funciona-y-por-que-es-util/} 
 
-\bibitem{b12} J. Harney, J. Dwyer. (2019, Agosto 1). Domain-Specific Language Processing Mines Value From Unstructured Data. (1ra edición) [Online]. Available: https://www.kdnuggets.com/2019/08/domain-specific-language-processing.html 
+\bibitem{b12} J. Harney, J. Dwyer. (2019, Agosto 1). Domain-Specific Language Processing Mines Value From Unstructured Data. (1\textsuperscript{ra} edición [Online]. Available: \url{https://www.kdnuggets.com/2019/08/domain-specific-language-processing.html}
 
-\bibitem{b13} L. Lanzarini, W. Hasperué, A. Villa Monte, P. Jimbo, G. Reyes, J. Corvi, A. Fernandez and J. A. Olivas. (2019, Abril 1).Minería de Datos, Minería de Textos y Big Data. (1ra edición) [Online]. Available: http://sedici.unlp.edu.ar/handle/10915/77022
+\bibitem{b13} L. Lanzarini, W. Hasperué, A. Villa Monte, P. Jimbo, G. Reyes, J. Corvi, A. Fernandez and J. A. Olivas. (2019, Abril 1).Minería de Datos, Minería de Textos y Big Data. (1\textsuperscript{ra} edición [Online]. Available: \url{http://sedici.unlp.edu.ar/handle/10915/77022}
 
-\bibitem{b14}T. A. Team, “Examples of Information Retrieval Application on Image and Text – Towards AI,” towardsai.net. https://towardsai.net/p/l/examples-of-information-retrieval-application-on-image-and-text (accessed Feb. 25, 2023).
+\bibitem{b14}T. A. Team. (2022, Mayo 27) “Examples of Information Retrieval Application on Image and Text – Towards AI,” towardsai.net. \url{https://towardsai.net/p/l/examples-of-information-retrieval-application-on-image-and-text}
 
-\bibitem{b15}[1]M. Allahyari et al., “A Brief Survey of Text Mining: Classification, Clustering and Extraction Techniques,” KDD Bigdas, vol. 13, 2017, Available: https://arxiv.org/pdf/1707.02919.pdf
+\bibitem{b15} M. Allahyari, “A Brief Survey of Text Mining: Classification, Clustering and Extraction Techniques,” KDD Bigdas, (1\textsuperscript{ra} edición, 2017, Available: \url{https://arxiv.org/pdf/1707.02919.pdf}
 
-\bibitem{b16}[1]Rédac, T. (2022, 14 septiembre). Text Mining o minería de textos: definición, técnicas, casos de uso. Formation Data Science. https://datascientest.com/es/text-mining-o-mineria-de-textos-definicion-tecnicas-casos-de-uso 
+\bibitem{b16} Rédac, T. (2022, septiembre 14). Text Mining o minería de textos: definición, técnicas, casos de uso. (1\textsuperscript{ra} edición). Formation Data Science. \url{https://datascientest.com/es/text-mining-o-mineria-de-textos-definicion-tecnicas-casos-de-uso}
 ‌
+\bibitem{b17} Equipo de la Universidad Internacional de La Rioja (2021, Octubre 15). ¿Cómo sacar partido al Text Mining? (1\textsuperscript{ra} edición). UNIR-La Universidad en Internet. \url{https://www.unir.net/marketing-comunicacion/revista/text-mining/}
 
 \end{thebibliography}
-\vspace{14pt}
+\vspace{12pt}
 
 \end{document}
