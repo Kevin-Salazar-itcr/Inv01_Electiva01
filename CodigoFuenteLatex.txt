@@ -79,7 +79,7 @@ La mayoría de la información que nos rodea es texto, toda la información que 
 La minería de texto se basa en diferentes etapas las cuales van desde la simple recolección de datos, pasando por el proceso de estos datos, la limpieza de texto, tokenización (dividir el texto en partes significativas), hasta la extracción de las características más importantes. 
 
 \section{Casos de Uso}
-Information Retieval casos:
+Information Retrieval casos:
 \subsection{Motores de Búsqueda}
 Motores de búsqueda: muchos de los navegadores utilizados actualmente utilizan las técnicas de IR para realizar búsquedas en diferentes documentos, esto por medio de la indexación, procesamiento de la consulta y la recuperación de la información.  
 \begin{itemize}
@@ -94,8 +94,9 @@ Uno de los casos de uso más frecuentes del IR es el elasticsearh, es una herram
 
 \subsection{Sistemas de recomendación}
 Recomendaciones por parte de los sistemas de búsqueda con base en las preferencias que tenga el usuario o en ciertos comportamientos que tienen en la navegación se puedan marcar como patrones de búsqueda por parte del usuario y se logra dar recomendaciones con base en el análisis de esos datos. 
-
+\\
 Minería de texto - casos:
+
 \subsection{Extracción de información}
 Uno de los casos de uso de la minería de texto es en la extracción de información específica de un documento en particular. Esta técnica de minería se puede ver reflejada en el modelo Latent Dirichlet Allocation, el cual es un modelo extrae los tópicos de una colección de documentos. 
 \subsection{Clasificación}
@@ -139,6 +140,14 @@ Esta técnica utiliza diferentes algoritmos para seguir los comportamientos de l
 \textbf{2. Stemming:}
 Consiste en separar los prefijos y los sufijos de las palabras para derivar su raíz y su significado. Esta técnica permite reducir el tamaño de los archivos de indexación [16].
 
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.8\linewidth]{analitica de texto.png}
+    \caption{Analítica de Texto}
+    \label{fig:ms1}
+\end{figure}
+\\
+
 \setlength{\leftskip}{1cm}
 \setlength{\parindent}{0pt}
 
@@ -173,9 +182,40 @@ Permite reconocer de manera automática las intenciones de un texto. Por ejemplo
 \setlength{\leftskip}{1cm}
 \setlength{\parindent}{0pt}
 
-\subsection{Clasificación de texto:}
+\subsection{Extracción de información:}
 Tiene el objetivo de extraer datos específicos en un texto, como palabras clave, nombres propios, direcciones o correos electrónicos. Esto permite evitar tener que clasificar los datos manualmente. \linebreak \\
 Es posible combinar la extracción de textos y la clasificación textual u otros métodos de minería de texto en el mismo análisis [16].
+
+\subsection{Reglas de asociación:}
+Las reglas de asociación se utilizan para descubrir hechos comunes dentro de un determinado conjunto de textos. Detectan implicaciones de la forma X -> Y, donde X es un conjunto de antecedentes e Y es el consecuente [20].
+
+\subsection{Reglas de Asociación difusas:}
+Estas asociaciones de diferencian de las tradicionales en que intentan representar la imprecisión de la información, lo cual las convierte en una herramienta muy útil para cuando se trabaja con texto [20].
+
+\subsection{Clustering:}
+El Clustering de documentos es un método no supervisado que realiza descubrimientos en agrupaciones de documentos, basandose en su contenido o en un tema determinado que caracteriza a uno de los grupos en los que se puede dividir una colección de documentos [20]. 
+
+\subsection{Clustering difuso:}
+Los algoritmos de clustering difuso se han utilizado de forma satisfactoria en minería de textos debido a la gestión que realizan de los datos incompletos; por un lado, se han empleado para mejorar la comprensión de los patrones, y por otro, para tratar el manejo de los clusters que se superponen, sustituyendo el uso de métricas crisp por conjuntos difusos que reflejan el grado de pertenencia a un cluster [20].
+
+\subsection{Árboles de decisión:}
+Esta es una técnica de clasificación supervisada donde existen regiones no superpuestas y hojas. Un ejemplo de árbol de decisión es el Hoeffding Tree, el cual es un árbol de decisión que emplea una estrategia de poda previa basada en el margen de Hoeffding. Los nodos se expanden en cuanto hay evidencias estadísticas [20].
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Hoeffding Tree.png}
+    \caption{Árbol de Hoeffding}
+    \label{fig:ms1}
+\end{figure}
+
+\setlength{\leftskip}{1cm}
+\setlength{\parindent}{0pt}
+
+\subsection{Árboles de decisión difusos:}
+Un árbol de decisión difuso es una estructura de árbol en donde los valores básicos de los atributos de una rama se caracterizan por sus funciones de pertenencia [20].
+
+\subsection{Algoritmos genéticos:}
+Los algoritmos genéticos son optimizaciones heurísticas cuyos mecanismos son análogos a la evolución biológica. Después de una población inicial de elementos, denominados cromosomas, se ejecutan las funciones de variación y selección hasta que se alcance un criterio establecido [20].
 
 \section{Principales Autores/Bibliografía}
 
@@ -216,7 +256,7 @@ Asimismo, es importante tomar en cuenta que con el pasar del tiempo y con el ava
 
 Ahora bien, es fundamental mencionar algunos libros o artículos que han sido de gran importancia en esta rama, ya que, gracias a ellos podemos mantenernos en un constante aprendizaje de la evolución de la minería de texto. A continuación presentaremos algunos libros de gran importancia en el ámbito educativo: 
 
-\textbf{1. MINERÍA DE TEXTO CON R. Aplicaciones y técnicas estadísticas de apoyo:}  en este libro se puede encontrar información como el procesamiento de datos, técnicas descriptivas en la minería de texto, técnicas explicativas y aplicaciones de la minería de texto. Adjuntamos la siguiente figura con fines meramente ilustrativos, ver figura \ref{fig:ms1}
+\textbf{1. MINERÍA DE TEXTO CON R. Aplicaciones y técnicas estadísticas de apoyo:}  en este libro se puede encontrar información como el procesamiento de datos, técnicas descriptivas en la minería de texto, técnicas explicativas y aplicaciones de la minería de texto. Se adjunta la siguiente figura con fines meramente ilustrativos, ver figura \ref{fig:ms1}
 
 \begin{figure}[htp]
     \centering
@@ -225,7 +265,7 @@ Ahora bien, es fundamental mencionar algunos libros o artículos que han sido de
     \label{fig:ms2}
 \end{figure}
 
-\textbf{2. Data Mining and Text Mining for Science and Technology Research:} en este documento se encontrará información acerca de la minería de datos y la minería de texto. Se introduce el tema de minería de texto como un caso especial de la minería de datos, además explica la utilidad que tienen para la bibliometría (datos matemáticos, estadísticos) y base de datos de patentes. Adjuntamos las siguientes figuras con fines meramente ilustrativos, ver figura \ref{fig:ms2} y \ref{fig:ms3}
+\textbf{2. Data Mining and Text Mining for Science and Technology Research:} en este documento se encontrará información acerca de la minería de datos y la minería de texto. Se introduce el tema de minería de texto como un caso especial de la minería de datos, además explica la utilidad que tienen para la bibliometría (datos matemáticos, estadísticos) y base de datos de patentes. Se adjuntan las siguientes figuras con fines meramente ilustrativos, ver figura \ref{fig:ms2} y \ref{fig:ms3}
 
 \begin{figure}[htp]
     \centering
@@ -243,7 +283,7 @@ Ahora bien, es fundamental mencionar algunos libros o artículos que han sido de
     \label{fig:ms4}
 \end{figure}
 
-\textbf{3. Modern Information Retrieval: } en este libro se puede encontrar información acerca del tema de la recuperación de información desde una perspectiva de ciencias de la computación. Va dirigido especialmente a estudiantes que deseen conocer sobre esta rama, incluye temas como como la recuperación web, el rastreo web, los motores de búsqueda de código abierto entre otros. También presentan conceptos importantes y los ejemplifican. Además este libro consta de dos autores principales, con contribuciones de principales autoridades en esta área, como lo es Yoelle Maarek, directora sénior de Yahoo! Investigación Israel; Dulce Poncele´on IBM Research; y Malcolm Slaney, Yahoo Research USA, como bien lo menciona el libro. Adjuntamos las siguientes figuras con fines meramente ilustrativos, ver figura \ref{fig:ms4} y \ref{fig:ms5} 
+\textbf{3. Modern Information Retrieval: } en este libro se puede encontrar información acerca del tema de la recuperación de información desde una perspectiva de ciencias de la computación. Va dirigido especialmente a estudiantes que deseen conocer sobre esta rama, incluye temas como como la recuperación web, el rastreo web, los motores de búsqueda de código abierto entre otros. También presentan conceptos importantes y los ejemplifican. Además este libro consta de dos autores principales, con contribuciones de principales autoridades en esta área, como lo es Yoelle Maarek, directora sénior de Yahoo! Investigación Israel; Dulce Poncele´on IBM Research; y Malcolm Slaney, Yahoo Research USA, como bien lo menciona el libro. Se adjuntan las siguientes figuras con fines meramente ilustrativos, ver figura \ref{fig:ms4} y \ref{fig:ms5} 
 
 \begin{figure}[htp]
     \centering
@@ -260,7 +300,7 @@ Ahora bien, es fundamental mencionar algunos libros o artículos que han sido de
 \end{figure}
 
 
-\textbf{4. Text Mining: Applications and Theory: } en este libro se encuentra información de algoritmos avanzados desde perspectivas académicas e industriales. Además de los algoritmos que proporciona se encuentra información de técnicas de ultima generación de la minería de texto, como son la clasificación, agrupación y detección de anomalías como bien se menciona en el libro. Por consiguiente, este libro es de gran utilidad para todas aquellas personas que estén interesadas en esta área, como estudiantes que cursan carreras universitarias relacionadas a la informática, matemáticos, estadísticos u cualquier otra persona/profesional en esta rama. Adjuntamos la siguiente figura con fines meramente ilustrativos, ver figura \ref{fig:ms6}
+\textbf{4. Text Mining: Applications and Theory: } en este libro se encuentra información de algoritmos avanzados desde perspectivas académicas e industriales. Además de los algoritmos que proporciona se encuentra información de técnicas de ultima generación de la minería de texto, como son la clasificación, agrupación y detección de anomalías como bien se menciona en el libro. Por consiguiente, este libro es de gran utilidad para todas aquellas personas que estén interesadas en esta área, como estudiantes que cursan carreras universitarias relacionadas a la informática, matemáticos, estadísticos u cualquier otra persona/profesional en esta rama. Se adjunta la siguiente figura con fines meramente ilustrativos, ver figura \ref{fig:ms6}
 
 \begin{figure}[htp]
     \centering
@@ -304,44 +344,126 @@ A nivel empresarial suena más rentable y más eficiente el uso de inteligencia 
 \\
 \textbf{e. Adaptabilidad: } La inteligencia artificial no es algo que solo se cierra a la ciencia, sino que es adaptable en cualquier campo, desde un trabajo simple hasta el manejo de tareas sumamente complejas que a un humano promedio le tomaría mucho tiempo. En este preciso caso, la recuperación textual y la minería de textos se aplica en muchas áreas, por ejemplo, la obtención del estado de una empresa sin necesidad de recurrir al análisis de su balance de cifras, se aplica en el marketing, a la hora de manejar reseñas y análisis de sentimientos acerca de un servicio o producto, como un instrumento en redes sociales para entender el comportamiento de los usuarios y adaptar con ello las estrategias de comunicación, entre otras áreas.
 
+\ 
+
+De igual manera es importante que el programador que aplique Text Mining cuente con una documentación especificada del código o programa realizado, esto, para que los usuarios tengan un manual de guía. Asimismo este documento debe contar con los comentarios de cada archivo de código fuente, y si es posible detallarlo linea por linea para que el usuario logre tener un mejor entendimiento e interés en el trabajo desarrollado por el programador. 
+
+
+Ahora bien, mencionaremos un breve ejemplo del trabajo realizado por Correa [18] a modo de resumen del Text Mining aplicado a documentación API(Application Programming Interface) para la detección de directivas. 
+
+Si bien menciona Correa [18], "los usuarios finales son principalmente dos". El primero de ellos es el usuario documentador que básicamente es la persona que documenta todo el trabajo desarrollado, en este caso debe documentar una librería con Javadoc, con el reto de que los usuarios que lo lean deban poder entender como funcionan estas librerías, de igual manera, según lo mencionado por Correa [18], estos pueden usar el programa CHi ("programa implementado durante este trabajo",[18]), "para que las directivas sean detectadas automáticamente.", aunque si se realiza manualmente puede llegar a ser un procedimiento bastante largo y tedioso, es por esto que, con CHi muchas de las directivas se realizan automáticamente, disminuyendo el trabajo.
+
+Por otro lado como lo menciona Correa[18], esta el usuario investigador de Text Mining, que cuya función principal es aplicar el Text Mining a la documentación anteriormente desarrollada, este tipo de usuario puede incluso mejorar las directivas anteriormente creadas. Además [18], menciona que: "Va a usar el programa para pre-procesar datos que luego usará en Weka u otra herramienta similar. Puede además modificar manualmente cuáles son las directivas en la aplicación web para editar su set de datos con mayor facilidad.". Un Weka según lo mencionado por [19], "es una Plataforma de Software para aprendizaje Automático y minería de datos escrito en Java y desarrollado en la Universidad de Waikato. Weka es un software libre distribuido bajo licencia GNU-GPL."
+
+Ahora bien, continuando con la idea anterior el pre-procesamiento de datos para ejecutar en el Text Mining puede ser un proceso algo complejo. De esta manera se explica en el trabajo de Correa[18]:
+
+\setlength{\leftskip}{1cm}
+\setlength{\parindent}{0pt}
+"En el caso de texto de la documentación de una API, el pre proceso de esta información significa extraer todos los comentarios de cada archivo de código fuente, posiblemente separarlo por frases y luego dejar los datos en un formato compatible con Weka por ejemplo. Es por esta razón que un usuario puede tener interés en usar las funciones de CHi."(p.12)
+
+\setlength{\leftskip}{0cm}
+ \setlength{\parindent}{1em}
+
+Seguidamente según lo mencionado por [18], los casos de uso del Text Mining para la detección de directivas, se dividen en dos partes:
+
+Primeramente según lo mencionado por [18], en ambas partes el:
+
+\setlength{\leftskip}{1cm}
+\setlength{\parindent}{0pt}
+"Usuario crea nuevo proyecto seleccionando una carpeta en su directorio local. Su carpeta
+contiene los archivos con extensión .java y contiene más carpetas internas que a su vez contienen otros archivos .java. La carpeta contiene otros archivos .txt y .html, pero estos no son considerados." (p.12)
+
+\setlength{\leftskip}{0cm}
+ \setlength{\parindent}{1em}
+ 
+\textbf{1. Documentador de API: } una vez creado el proyecto, el usuario debe elegir tres opciones, las cuales según lo mencionado por [18] son: "no adivinar directivas, adivinar usando el clasificador de Machine Learning o adivinar usando keywords."(p.12), esto con el fin de poder procesar los textos y mostrar los comentarios API, que según [18] indica que "el proyecto ya ha sido creado y está listo para ser manualmente revisado."(p.12)
+
+
+\textbf{2. Investigador de Text Mining: } es cuando el usuario verifica la documentación del API desarrollada. Además [18] menciona que: "El usuario luego aplica algoritmos de Machine Learning o análisis de Text Mining en el programa Weka abriendo el archivo .arff que contiene las frases de documentación que él manualmente revisó." (p.13)
+ 
+
+A continuación mostraremos la interfaz CHi utilizada en este proyecto: 
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.9\linewidth]{InterfazCHi.png}
+    \caption{Interfaz CHi, imagen extraída del trabajo de Correa [18]}
+    \label{fig:ms8}
+\end{figure}
+
+Asimismo, esta imagen se encuentra enumerada por: 
+
+\textbf{1. New Project: } "Permite seleccionar una carpeta que contenga los archivos de código fuente de un proyecto Java para comenzar a destacar las directivas de la documentación.", [18]
+
+\textbf{2. Open Project: } "Permite continuar revisando un proyecto que ya existe. Debe ser un archivo csv.", [18]
+
+\textbf{3. Navigation: } "Permite navegar entre los comentarios y frases de la documentación, además de cambiar la clase de la frase seleccionada.", [18]
+
+\textbf{4. Information: } "Tipo de comentario (método, campo, clase, paquete), clase Java del comentario y ubicación del archivo que contiene al comentario.", [18]
+
+\textbf{5. Comment display: } "Zona donde se muestran las frases de los comentarios. Las frases se pueden destacar para marcar el tipo o clase de frase que es (no-directiva, directiva, directiva-null, semi-directiva/por-revisar).", [18]
+
+\textbf{6. Show/Hide Modified Phrases: } "Ver lista de frases modificadas. Cada frase tiene una ID única que la identifica", [18]
+
+\textbf{7. Export Modifications: } "Exportar la documentación de API del proyecto, considerando las modificaciones realizadas, a un archivo csv.", [18]
+
+
+\textbf{6. Erase all Modifications: } "Borrar todas las modificaciones realizadas.", [18]
+
+
+Así pues, esto es una pequeña parte de todo el proceso que se requiere en el Text Mining para ser aplicado a la documentación API para la detección de directivas. 
+
+
+\section{Conclusión}
+La minería de datos y la recuperación textual en conjunto, aplicada al mundo real es un recurso de gran utilidad que permite extraer conocimientos de alto valor, provenientes de grandes conjuntos de datos. Dicha técnica ha sido utilizada con éxito en diversos campos, esto incluye el campo de la medicina, el marketing digital y sobre todo la publicidad. Sin embargo, la implementación de la minería de datos en el mundo real plantea desafíos significativos, incluyendo la calidad e integridad de los datos, la privacidad y seguridad de los datos (háblese de datos obtenidos mediante la técnica o bien datos ofrecidos a la máquina), y la necesidad de una infraestructura informática robusta (Es claro que  una inteligencia artificial que posea el alto calibre para la obtención de resultados ampliamente desarrollados a través de la minería de datos, requiere de una infraestructura bastante fuerte y sobre todo, la necesidad de equipo tecnológico de alta calidad). En general, la minería de datos aplicada al mundo real puede proporcionar una ventaja competitiva a las empresas y organizaciones que la utilizan correctamente, siempre que se aborden adecuadamente los desafíos asociados a los retos que se le inculcan.
+
+
 
 \begin{thebibliography}{00}
 
-\bibitem{b1} A. Delgado (2022, Marzo 01). Text Mining: Introducción al análisis de textos con IA. (1\textsuperscript{ra} edición [Online]. Available: \url{https://pixelabs.es/que-es-la-mineria-de-textos/}
+\bibitem{b1} A. Delgado (2022, Marzo 01). Text Mining: Introducción al análisis de textos con IA. (1\textsuperscript{ra} Edición)[Online]. Available: \url{https://pixelabs.es/que-es-la-mineria-de-textos/}
 
-\bibitem{b2} R. Awati (2022, Abril 14). Data Dredging (data fishing) (1\textsuperscript{ra} edición [Online]. Available: \url{https://www.techtarget.com/searchdatamanagement/definition/data-dredging}
+\bibitem{b2} R. Awati (2022, Abril 14). Data Dredging (data fishing) (1\textsuperscript{ra} Edición)[Online]. Available: \url{https://www.techtarget.com/searchdatamanagement/definition/data-dredging}
 
-\bibitem{b3} M. Álvaro López (2019, Junio). APLICACIONES DEL TEXT MINING EN LA ACTUALIDAD CENTRADO EN EL ÁREA DE MARKETING (1\textsuperscript{ra} edición [Online]. Available: \url{https://repositorio.comillas.edu/jspui/bitstream/11531/32596/1/Aplicaciones%20del%20Text%20Mining%20en%20la%20Actualidad%20centrado%20en%20el%20Area%20del%20Marketing.pdf}
+\bibitem{b3} M. Álvaro López (2019, Junio). APLICACIONES DEL TEXT MINING EN LA ACTUALIDAD CENTRADO EN EL ÁREA DE MARKETING (1\textsuperscript{ra} Edición)[Online]. Available: \url{https://repositorio.comillas.edu/jspui/bitstream/11531/32596/1/Aplicaciones%20del%20Text%20Mining%20en%20la%20Actualidad%20centrado%20en%20el%20Area%20del%20Marketing.pdf}
 
-\bibitem{b4} Y. Rodríguez Suárez and A. Díaz Amador (2009, Diciembre). Herramientas de Minería de Datos (3\textsuperscript{ra} edición [Online]. Available: \url{https://www.redalyc.org/pdf/3783/378343637009.pdf}
+\bibitem{b4} Y. Rodríguez Suárez and A. Díaz Amador (2009, Diciembre). Herramientas de Minería de Datos (3\textsuperscript{ra} Edición)[Online]. Available: \url{https://www.redalyc.org/pdf/3783/378343637009.pdf}
 
-\bibitem{b5} J.H. Kroeze, M.C. Matthee and T.J.D. Bothma (2004, Diciembre). Differentiating between data-mining and text-mining terminology (4\textsuperscript{ra} edición) [Online]. Available: \url{https://sajim.co.za/index.php/sajim/article/view/353/344}
+\bibitem{b5} J.H. Kroeze, M.C. Matthee and T.J.D. Bothma (2004, Diciembre). Differentiating between data-mining and text-mining terminology (4\textsuperscript{ra} Edición) [Online]. Available: \url{https://sajim.co.za/index.php/sajim/article/view/353/344}
 
-\bibitem{b6} Rob, P. and Coronel, C.  (2002). Database systems: design, implementation, and management  (5\textsuperscript{ra} edición) [Online]. Available: \url{https://sajim.co.za/index.php/sajim/article/view/353/344}
+\bibitem{b6} Rob, P. and Coronel, C.  (2002). Database systems: design, implementation, and management  (5\textsuperscript{ra} Edición) [Online]. Available: \url{https://sajim.co.za/index.php/sajim/article/view/353/344}
 
-\bibitem{b7} D. Sullivan(2004, Enero). The need for text mining in business intelligence (1e\textsuperscript{ra} edición [Online]. Available: \url{https://www.researchgate.net/publication/344067699_Text_Mining_in_Business_Intelligence}
+\bibitem{b7} D. Sullivan(2004, Enero). The need for text mining in business intelligence (1e\textsuperscript{ra} Edición)[Online]. Available: \url{https://www.researchgate.net/publication/344067699_Text_Mining_in_Business_Intelligence}
 
 \bibitem{b8} J. Arévalo (2018, Febrero, 22). ¿Qué es la minería de textos, cómo funciona y por qué es útil? [Online]. Available: \url{https://universoabierto.org/2018/02/22/que-es-la-mineria-de-textos-como-funciona-y-por-que-es-util/}
 
-\bibitem{b9} A. Karami, M. Lundy, F. Webb, and Y. K. Dwivedi. (2020, Marzo 26).Twitter and Research: A Systematic Literature Review Through Text (2\textsuperscript{ra} edición [Online]. Available: \url{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9047963} 
+\bibitem{b9} A. Karami, M. Lundy, F. Webb, and Y. K. Dwivedi. (2020, Marzo 26).Twitter and Research: A Systematic Literature Review Through Text (2\textsuperscript{ra} Edición)[Online]. Available: \url{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9047963} 
 
-\bibitem{b10} A. Godoy. (2017, Abril 1).Técnicas de aprendizaje de máquina utilizadas para la minería de texto. (1\textsuperscript{ra} edición [Online]. Available: \url{https://www.scielo.org.mx/pdf/ib/v31n71/2448-8321-ib-31-71-00103.pdf}  
+\bibitem{b10} A. Godoy. (2017, Abril 1).Técnicas de aprendizaje de máquina utilizadas para la minería de texto. (1\textsuperscript{ra} Edición)[Online]. Available: \url{https://www.scielo.org.mx/pdf/ib/v31n71/2448-8321-ib-31-71-00103.pdf}  
 
-\bibitem{b11} J. Chang, C. O’ Reilly, N. Pontika, G. Owen, K. Haug and M. Oudenhoven. (2018, Febrero 21). ¿Qué es la minería de textos, cómo funciona y por qué es útil?  (1\textsuperscript{ra} edición [Online]. Available: \url{https://universoabierto.org/2018/02/22/que-es-la-mineria-de-textos-como-funciona-y-por-que-es-util/} 
+\bibitem{b11} J. Chang, C. O’ Reilly, N. Pontika, G. Owen, K. Haug and M. Oudenhoven. (2018, Febrero 21). ¿Qué es la minería de textos, cómo funciona y por qué es útil?  (1\textsuperscript{ra} Edición)[Online]. Available: \url{https://universoabierto.org/2018/02/22/que-es-la-mineria-de-textos-como-funciona-y-por-que-es-util/} 
 
-\bibitem{b12} J. Harney, J. Dwyer. (2019, Agosto 1). Domain-Specific Language Processing Mines Value From Unstructured Data. (1\textsuperscript{ra} edición [Online]. Available: \url{https://www.kdnuggets.com/2019/08/domain-specific-language-processing.html}
+\bibitem{b12} J. Harney, J. Dwyer. (2019, Agosto 1). Domain-Specific Language Processing Mines Value From Unstructured Data. (1\textsuperscript{ra} Edición)[Online]. Available: \url{https://www.kdnuggets.com/2019/08/domain-specific-language-processing.html}
 
-\bibitem{b13} L. Lanzarini, W. Hasperué, A. Villa Monte, P. Jimbo, G. Reyes, J. Corvi, A. Fernandez and J. A. Olivas. (2019, Abril 1).Minería de Datos, Minería de Textos y Big Data. (1\textsuperscript{ra} edición [Online]. Available: \url{http://sedici.unlp.edu.ar/handle/10915/77022}
+\bibitem{b13} L. Lanzarini, W. Hasperué, A. Villa Monte, P. Jimbo, G. Reyes, J. Corvi, A. Fernandez and J. A. Olivas. (2019, Abril 1).Minería de Datos, Minería de Textos y Big Data. (1\textsuperscript{ra} Edición)[Online]. Available: \url{http://sedici.unlp.edu.ar/handle/10915/77022}
 
 \bibitem{b14}T. A. Team. (2022, Mayo 27) “Examples of Information Retrieval Application on Image and Text – Towards AI,” towardsai.net. \url{https://towardsai.net/p/l/examples-of-information-retrieval-application-on-image-and-text}
 
 \bibitem{b15} M. Allahyari, “A Brief Survey of Text Mining: Classification, Clustering and Extraction Techniques,” KDD Bigdas, (1\textsuperscript{ra} edición, 2017, Available: \url{https://arxiv.org/pdf/1707.02919.pdf}
 
-\bibitem{b16} Rédac, T. (2022, septiembre 14). Text Mining o minería de textos: definición, técnicas, casos de uso. (1\textsuperscript{ra} edición). Formation Data Science. \url{https://datascientest.com/es/text-mining-o-mineria-de-textos-definicion-tecnicas-casos-de-uso}
+\bibitem{b16} Rédac, T. (2022, septiembre 14). Text Mining o minería de textos: definición, técnicas, casos de uso. (1\textsuperscript{ra} Edición). Formation Data Science. \url{https://datascientest.com/es/text-mining-o-mineria-de-textos-definicion-tecnicas-casos-de-uso}
 ‌
-\bibitem{b17} Equipo de la Universidad Internacional de La Rioja (2021, Octubre 15). ¿Cómo sacar partido al Text Mining? (1\textsuperscript{ra} edición). UNIR-La Universidad en Internet. \url{https://www.unir.net/marketing-comunicacion/revista/text-mining/}
+\bibitem{b17} Equipo de la Universidad Internacional de La Rioja (2021, Octubre 15). ¿Cómo sacar partido al Text Mining? (1\textsuperscript{ra} Edición). UNIR-La Universidad en Internet. \url{https://www.unir.net/marketing-comunicacion/revista/text-mining/}
+
+\bibitem{b18} G. Correa. (2015). Text mining aplicado a documentación de API para la detección de directivas. [Online]. Available: \url{https://repositorio.uchile.cl/handle/2250/137753}
+
+\bibitem{b19} EcuRed contributors. (2016, junio, 15). Weka. [Online]. Available: \url{https://www.ecured.cu/Weka}
+
+\bibitem{b20} Justicia de la torre, M. (2016). NUEVAS TÉCNICAS DE MINERÍA DE TEXTOS. Decsai | Universidad de Granada.  \url{https://digibug.ugr.es/bitstream/handle/10481/46975/26606203.pdf?sequence=1}
 
 \end{thebibliography}
 \vspace{12pt}
 
 \end{document}
+
+
